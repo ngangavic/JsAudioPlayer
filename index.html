@@ -2,13 +2,30 @@
 <html>
 
 <head>
-    <title></title>
+	<title>JsAudioPlayer</title>
+	<!----Jquery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--fontawesome-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 </head>
 
 <body>
-	<audio controls autoplay>
+	<div class="container">
+	<div class="row">
+	<audio id="music">
 		<source src="Bodyguard  - Steel Pulse.mp3" type="audio/mpeg">
 	</audio>
+
+	<i class="fa fa-5x fa-play-circle a" id="play" onclick="play_music('music','play');replace_class('play');" ></i>
+       
+	<div >
+		<h5>Music Name</h5>
+	</div>
+		 </div>   
+		 </div>               
 </body>
 
 </html>
