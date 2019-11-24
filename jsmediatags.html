@@ -1,0 +1,28 @@
+<!--Derived from https://github.com/aadsm/jsmediatags-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.0/jsmediatags.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    jsmediatags.read("http://127.0.0.1/JsAudioPlayer/Bodyguard-SteelPulse.mp3", {
+        onSuccess: function(tag) {
+            var tags = tag.tags;
+
+            alert("Artists "+tags.artist+"\n"+"Title "+tags.title+"\n"+"Album "+tags.album+"\n"+"Genre "+tags.genre+"\n"+"Year "+tags.year+"\n"+"Comment "+tags.comment);
+           // console.log(tag);
+        },
+        onError: function(error) {
+            alert("Error");
+            //console.log(error);
+        }
+    });
+</script>
+
+
+</body>
+</html>
